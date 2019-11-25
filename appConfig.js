@@ -12,7 +12,7 @@ var developmentDatabase = {
 var connectionString = "postgressql://vfoiltyjszbpav:22077284a687886bc08c192941b095d6612cdf50d1da292888a26c6aa7347f03@ec2-54-228-243-29.eu-west-1.compute.amazonaws.com:5432/dduigib0uc8ebt?ssl=true";
 
 if (process.env.NODE_ENV == 'production') {
-    //Production modunda
+    //Production mode
     if (process.env.DATABASE_URL) {
         developmentDatabase = parseConnectionString(process.env.DATABASE_URL);
     } else {
@@ -20,7 +20,7 @@ if (process.env.NODE_ENV == 'production') {
         developmentDatabase = parseConnectionString(connectionString);
     }
 }else{
-    //Development modunda
+    //Development mode
     developmentDatabase = parseConnectionString(connectionString);
 }
 
