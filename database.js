@@ -16,7 +16,7 @@ var options = {
 
 
 function getAllLocations(cb) {
-    DATABASE_PGB.any('SELECT ST_X(loc) as longitude, ST_Y(loc) as latitude from GetAllData()')
+    DATABASE_PGB.any('SELECT ST_X(loc) as longitude, ST_Y(loc) as latitude from trees')
         .then(function (data) {
             cb(null, data);
         })
