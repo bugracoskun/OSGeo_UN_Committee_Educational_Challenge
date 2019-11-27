@@ -9,7 +9,7 @@ var developmentDatabase = {
     }
 }
 
-var connectionString = "postgressql://vfoiltyjszbpav:22077284a687886bc08c192941b095d6612cdf50d1da292888a26c6aa7347f03@ec2-54-228-243-29.eu-west-1.compute.amazonaws.com:5432/dduigib0uc8ebt?ssl=true";
+var connectionString = "postgressql://eklebkmnmvnsjj:9715c486d74c3560e40422b91baba81b9bdb2dd09de884f204922a4deb840996@ec2-54-217-221-21.eu-west-1.compute.amazonaws.com:5432/d41fi7qtbl8bap?ssl=true";
 
 if (process.env.NODE_ENV == 'production') {
     //Production mode
